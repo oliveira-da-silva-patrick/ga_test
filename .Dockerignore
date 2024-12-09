@@ -1,3 +1,5 @@
 renv/
 .github/
 fig/
+Dockerfile
+Dockerfile_base
