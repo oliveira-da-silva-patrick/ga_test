@@ -8,8 +8,6 @@ COPY . /home/project/
 
 WORKDIR /home/project/
 
-RUN R -e "install.packages('renv', repos = c(CRAN = 'https://cloud.r-project.org'))"
-
 RUN R -e "renv::restore()"
 
 RUN R -e "targets::tar_make()"
